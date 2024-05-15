@@ -32,7 +32,12 @@
     <br><br>
 
 5. Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14)  del 20/06/2020 (21) <br>
-    
+    SELECT *  <br>
+    FROM `exams` <br>
+    WHERE `date` = '2020-06-20' <br>
+    AND TIME_FORMAT(`hour`, '%H:%i') > '14:00'; <br>
+    <br><br>
+
 
 6. Selezionare tutti i corsi di laurea magistrale (38) <br>
 
