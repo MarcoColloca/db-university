@@ -19,7 +19,10 @@
 
 
 3. Selezionare tutti gli studenti che hanno più di 30 anni <br>
-
+    SELECT * , CURDATE() AS `date_now`, TIMESTAMPDIFF(YEAR,`date_of_birth`,CURDATE()) AS age <br>
+    FROM `students` <br>
+    WHERE TIMESTAMPDIFF(YEAR,`date_of_birth`,CURDATE()) > 30; <br>
+    <br><br>
 
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso  di laurea (286) <br>
 
