@@ -8,10 +8,14 @@
 
     SELECT * <br>
     FROM `students` <br>
-    WHERE YEAR("`date_of_birth`) = 1990; <br><br>
+    WHERE YEAR("`date_of_birth`) = 1990; 
+    <br><br>
 
 2. Selezionare tutti i corsi che valgono più di 10 crediti (479) <br>
-
+    SELECT * <br>
+    FROM `courses` <br>
+    WHERE `cfu` > 10; <br>
+    <br><br>
 
 
 3. Selezionare tutti gli studenti che hanno più di 30 anni <br>
