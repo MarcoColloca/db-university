@@ -40,7 +40,10 @@
 
 
 6. Selezionare tutti i corsi di laurea magistrale (38) <br>
-
+SELECT *  <br>
+FROM `degrees` <br>
+WHERE `level` = 'magistrale'; <br>
+<br><br>
 
 7. Da quanti dipartimenti è composta l'università? (12) <br>
 
