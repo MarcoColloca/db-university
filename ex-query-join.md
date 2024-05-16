@@ -103,7 +103,7 @@
 
 7. BONUS: Selezionare per ogni studente il numero di tentativi sostenuti per ogni esame, stampando anche il voto massimo. Successivamente, filtrare i tentativi con voto minimo 18.
 
-        SELECT COUNT(*) AS `number_of_attempt`, `students`.`name`, `students`.`surname`, MAX(`exam_student`.`vote`) AS `best_vote`
+        SELECT COUNT(*) AS `number_of_attempts`, `students`.`name`, `students`.`surname`, MAX(`exam_student`.`vote`) AS `best_vote`
 
         FROM `students`
 
