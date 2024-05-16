@@ -59,10 +59,23 @@
             ON `departments`.`id` = `degrees`.`department_id`
 
         ORDER BY `student_surname`, `student_name`;
-        
+
 ---
 
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
+
+        SELECT `degrees`.*, `teachers`.*
+
+        ROM `courses`
+
+        INNER JOIN `course_teacher`
+             ON `course_teacher`.`course_id` = `courses`.`id`
+        
+        INNER JOIN `teachers`
+        	ON `course_teacher`.`teacher_id` = `teachers`.`id`
+            
+        INNER JOIN `degrees`
+        	ON `courses`.`degree_id` = `degrees`.`id`;
 
 ---
 
